@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Practice
+//  FirstBreak
 //
 //  Created by Ohara Yoji on 2025/03/22.
 //
@@ -10,10 +10,12 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
-    
     var body: some View {
         VStack {
-            UserListView()
+            Model3D(named: "Scene", bundle: realityKitContentBundle)
+                .padding(.bottom, 50)
+
+            Text("Hello, world!")
         }
         .padding()
     }
